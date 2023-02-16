@@ -1,13 +1,10 @@
+// 백승호
 function solution(n) {
-    var answer = [];
     let strit=[]
-    let StringN =String(n)
-    let SplitN =StringN.split('')
-    // console.log('출력:',SplitN)
-//     이제 문자를 숫자로 변환해서 배열에 넣어야함.
-    for(let i=0;i<SplitN.length;i++){
-        strit.push(Number(SplitN[i]))
+    let StringfromN =String(n)
+    let SplittoStringfromN =StringfromN.split('')
+    for(let i=0;i<SplittoStringfromN.length;i++){
+        strit.push(Number(SplittoStringfromN[i]))
     }
-    answer=strit.reverse();
-    return answer;
+    return strit.reverse();
 }
