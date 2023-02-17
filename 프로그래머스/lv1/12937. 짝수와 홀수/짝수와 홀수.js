@@ -1,8 +1,5 @@
-function solution(num) {
-   let answer=''
-   num%2==0? answer="Even":answer="Odd";
-    
-return answer 
+function solution(num) {   
+return num%2==0?"Even":"Odd";
 }
 
 // 그전코드
