@@ -1,5 +1,4 @@
 function solution(numbers) {
-    let sort =numbers.sort((a,b)=>a-b)
-    let answer= sort[sort.length-1]*sort[sort.length-2]
-    return answer;
+    let sortn =numbers.sort((a,b)=>b-a)
+    return sortn[0]*sortn[1];
 }
