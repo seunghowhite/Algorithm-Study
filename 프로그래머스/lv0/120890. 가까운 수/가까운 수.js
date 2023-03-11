@@ -1,7 +1,5 @@
 function solution(array, n) {
-    const abs =(absnum)=> Math.abs(absnum)
-    var answer = array.sort().map((item)=> abs(item-n));
-    let minasnwerindex =answer.indexOf(Math.min(...answer))
-    
+    var minnum = array.sort().map((item)=> Math.abs(item-n));
+    let minasnwerindex =minnum.indexOf(Math.min(...minnum))
     return array[minasnwerindex];
 }
