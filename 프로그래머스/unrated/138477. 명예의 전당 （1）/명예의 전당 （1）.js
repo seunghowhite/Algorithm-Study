@@ -1,26 +1,16 @@
 function solution(k, score) {
-    let stack = [];
-    let ans = [];
-    
-    for(let i = 0; i < score.length; i++){
-        const eachScore = score[i];
-        
-        if(stack.length < k){
-            stack.push(eachScore);
-            ans.push(Math.min(...stack));
-            continue;
+    const stack = []
+    return score.reduce((a,c) => {
+        if(stack.length < k) {
+            stack.push(c)
+            stack.sort((a,b) => a - b)
         }
-        
-        if(Math.min(...stack) >= eachScore){
-            ans.push(Math.min(...stack));
-            continue;
+        else {
+            stack.push(c)
+            stack.sort((a,b) => a - b)
+            stack.shift()
         }
-        
-        stack.sort((a, b) => b - a);
-        stack.pop();
-        stack.push(eachScore);
-        ans.push(Math.min(...stack));
-    }
-    
-    return ans;
+        a.push(stack[0])
+        return a
+    },[])
 }
