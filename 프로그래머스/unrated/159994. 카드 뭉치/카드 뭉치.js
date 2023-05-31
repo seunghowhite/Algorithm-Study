@@ -5,10 +5,10 @@ function solution(cards1, cards2, goal) {
     
     for(let i=0;i<goal.length;i++){
         if(goal[i]==cd1[0]){
-            cd1=cd1.slice(1)
+            cd1.shift()
             continue
         }else if(goal[i]==cd2[0]){
-            cd2=cd2.slice(1)
+            cd2.shift()
             continue
         }
         answer ="No"
