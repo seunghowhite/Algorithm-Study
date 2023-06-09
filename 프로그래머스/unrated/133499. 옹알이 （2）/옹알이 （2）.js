@@ -11,9 +11,10 @@ function solution(babbling) {
             }
             
             babble = babble.split(can[j]).join(" ");
-        }
         
-        if(babble.split(" ").join("").length === 0){
+        }
+          console.log(babble)
+        if(babble.trim().length === 0){
             count += 1;
         }
     }
