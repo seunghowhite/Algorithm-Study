@@ -1,3 +1,4 @@
+// 내코드
 function solution(x, n) {
     let answer = [];
     for (let i=0;i<n;i++){
@@ -10,3 +11,12 @@ function solution(x, n) {
     }
     return answer;
 }
+
+// 다른사람 코드
+// function solution(x, n) {
+//     var answer = [];
+//     for (let i = 1; i <= n; i++) {
+//         answer.push(x*i)
+//     }
+//     return answer;
+// }
