@@ -1,9 +1,36 @@
-//2023년 11월 29일
+//2024년 7월 16일
 function solution(s){
-    s = s.toUpperCase();
-   return s.split("P").length === s.split("Y").length;
 
+  const result = s.toLowerCase().split("").reduce((acc, cur) => {
+
+    if (cur === 'p') {
+      return acc + 1;
+    }
+
+    else if (cur === 'y') {
+      return acc - 1;
+    }
+    else{
+      return acc;
+    }
+  }, 0); 
+  return result === 0;
 }
+
+
+
+
+
+
+
+
+
+//2023년 11월 29일
+// function solution(s){
+//     s = s.toUpperCase();
+//    return s.split("P").length === s.split("Y").length;
+
+// }
 
 
 
