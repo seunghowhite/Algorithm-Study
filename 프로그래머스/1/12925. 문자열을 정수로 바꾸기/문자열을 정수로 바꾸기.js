@@ -1,7 +1,5 @@
-//2023 11월 28일
 function solution(s) {
-    let answer=Number(s)
-    return answer;
+    return Number(s);
 }
 
 
@@ -13,6 +11,11 @@ function solution(s) {
 
 
 
+//2023 11월 28일
+// function solution(s) {
+//     let answer=Number(s)
+//     return answer;
+// }
 
 // 이전 코드
 // function solution(s) {
