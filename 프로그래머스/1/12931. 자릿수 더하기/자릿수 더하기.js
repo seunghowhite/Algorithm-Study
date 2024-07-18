@@ -1,7 +1,21 @@
-//2023년 11월 28일
+//2024 7월 18일
 function solution(n){
-  return n.toString().split("").reduce((cur,acc)=>cur+Number(acc),0);
+    return n.toString().split("").reduce((cur,acc)=>cur+Number(acc),0);
 }
+
+
+
+
+
+
+
+
+
+
+//2023년 11월 28일
+// function solution(n){
+//   return n.toString().split("").reduce((cur,acc)=>cur+Number(acc),0);
+// }
 
 
 
