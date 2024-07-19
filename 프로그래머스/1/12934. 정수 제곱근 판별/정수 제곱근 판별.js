@@ -1,10 +1,23 @@
-//2023년 11월 30일
-function solution(n){
-    let result = 0;
-    let sprtNum = Math.sqrt(n);
-    result = Number.isInteger(sprtNum) ? Math.pow(sprtNum+1, 2) : -1;
-    return result;
+//2023-07-18
+function solution(n) {
+    return Number.isInteger(Math.sqrt(n))?(Math.sqrt(n)+1)**2:-1;
 }
+
+
+
+
+
+
+
+
+
+//2023년 11월 30일
+// function solution(n){
+//     let result = 0;
+//     let sprtNum = Math.sqrt(n);
+//     result = Number.isInteger(sprtNum) ? Math.pow(sprtNum+1, 2) : -1;
+//     return result;
+// }
 
 //그전코드
 // function solution(n) {
