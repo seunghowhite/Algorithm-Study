@@ -1,6 +1,6 @@
 //2024-08-07
 function solution(s) {
-    return s.split("").sort().reverse().join("");
+    return s.split("").sort((a,b) => a<b ? 1:-1).join("")
 }
 
 
