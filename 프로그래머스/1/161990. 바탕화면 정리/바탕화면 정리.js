@@ -1,7 +1,7 @@
 //2024-11-15
 function solution(wallpaper) {
     // answer 배열 초기화: 첫 `#`를 찾기 전에는 기본값 유지
-    let answer = [-1, -1, -1, -1];
+    let answer = [wallpaper.length, wallpaper[0].length, 0, 0];
     let isFirstFound = false; // 첫 번째 `#`가 발견되었는지 여부를 추적
 
     wallpaper.forEach((map, rowIndex) => {
