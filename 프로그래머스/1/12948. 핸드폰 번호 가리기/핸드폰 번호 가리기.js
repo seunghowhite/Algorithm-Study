@@ -1,7 +1,8 @@
 //2024-08-03
 function solution(phone_number) {
-    const phone_number_length =phone_number.length
-    return "*".repeat(phone_number_length-4)+phone_number.slice(-4,phone_number_length);
+    // const phone_number_length =phone_number.length
+    // return "*".repeat(phone_number_length-4)+phone_number.slice(-4,phone_number_length);
+     return phone_number.replace(/\d(?=\d{4})/g, "*");
 }
 
 
