@@ -1,6 +1,28 @@
 //2024-11-04
+// function solution(lottos, win_nums) {
+//     var answer = [];
+//     let sameCount =0
+//     let zeroCount =0
+//     lottos.forEach((num,index) => {
+//         const isIncludes = win_nums.includes(num); 
+//         if (isIncludes) { 
+//             sameCount++;
+//         }
+//         if(num ===0){
+//             zeroCount++
+//         }
+//         if(index ===lottos.length-1){
+//             const max = sameCount+zeroCount
+//             const min = sameCount
+//          max > 1 ? answer.push(7 -   max) : answer.push(6);
+//          min > 1 ? answer.push(7 -   min) : answer.push(6);
+//         }
+//     })
+//     return answer;
+// }
 
 
+// 이게 더 빠름..
 function solution(lottos, win_nums) {
     const rank = [6, 6, 5, 4, 3, 2, 1];
 
@@ -11,8 +33,6 @@ function solution(lottos, win_nums) {
 
     return [rank[maxCount], rank[minCount]];
 }
-
-
 
 
 
