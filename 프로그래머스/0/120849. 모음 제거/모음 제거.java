@@ -12,6 +12,6 @@ class Solution {
 		}
         
         
-        return answer;
+        return my_string;
     }
 }
